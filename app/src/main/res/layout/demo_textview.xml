@@ -6,8 +6,8 @@
 
     <TextView
         android:id="@+id/demoTextView1"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_centerInParent="true"
         android:background="#333"
         android:text="TextView"
@@ -20,6 +20,50 @@
         android:shadowDy="10"
         android:shadowRadius="3"
         />
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="我有边框"
+        android:background="@drawable/txt_rectborder"
+        android:layout_toLeftOf="@id/demoTextView1"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:drawableTop="@drawable/home"
+        android:layout_below="@id/demoTextView1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="首页"
+        android:textColor="#333"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/demoTextView1"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="www.baidu.com|893589795@qq.com"
+        android:textSize="11pt"
+        android:autoLink="web"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="你整天说着日了狗日了狗，但是你却没有来，呵呵呵呵呵呵呵呵呵呵~"
+        android:textColor="#333"/>
+
+
 
 
 
