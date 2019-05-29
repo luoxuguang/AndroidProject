@@ -6,7 +6,15 @@
     <ViewFlipper
         android:id="@+id/demoViewFlipper"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:inAnimation="@anim/right_in"
+        android:outAnimation="@anim/right_out"
+        android:flipInterval="3000">
+
+        <!--<include layout="@layout/image_page_one"/>-->
+        <!--<include layout="@layout/image_page_two"/>-->
+        <!--<include layout="@layout/image_page_three"/>-->
+
     </ViewFlipper>
 
 </RelativeLayout>
