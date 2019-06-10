@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
@@ -34,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
         }
 //        viewFlipper.startFlipping();
 
+        Intent intent = getIntent();
+        if (intent!=null){
+            String title = intent.getStringExtra("title");
+            UserInfo userInfo = (UserInfo) intent.getSerializableExtra("userInfo");
+            setTitle(title);
+        }
 
     }
 
